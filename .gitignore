@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Source/DataStructures/DataStructures.Sorts/bin/Debug/netstandard2.0
+/Source/DataStructures/DataStructures.Sorts/obj
+/Source/DataStructures/.vs/DataStructures/v16
+/Source/DataStructures/TestData/bin/Debug/netcoreapp3.1
+/Source/DataStructures/TestData/obj
