@@ -2,6 +2,8 @@
 {
     public class BubbleSort : ISort
     {
+        public string Name => nameof(BubbleSort);
+
         public int[] Sort(int[] entry)
         {
             bool swapped;
