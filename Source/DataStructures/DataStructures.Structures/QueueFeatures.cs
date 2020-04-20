@@ -6,6 +6,9 @@ namespace DataStructures.Structures
     {
         public static void Demo()
         {
+
+            Console.WriteLine("Queue......");
+
             System.Collections.Generic.Queue<string> movies = new System.Collections.Generic.Queue<string>();
             movies.Enqueue("Ace Ventura");
             movies.Enqueue("Batman");
@@ -49,6 +52,8 @@ namespace DataStructures.Structures
             Console.WriteLine("\nqueueCopy.Clear()");
             queueCopy.Clear();
             Console.WriteLine("\nqueueCopy.Count = {0}", queueCopy.Count);
+
+            Console.WriteLine("End of Queue");
         }
     }
 }

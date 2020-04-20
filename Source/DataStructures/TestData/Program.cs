@@ -1,4 +1,5 @@
-﻿using DataStructures.Sorts;
+﻿using DataStructures.Searches;
+using DataStructures.Sorts;
 using DataStructures.Structures;
 using System;
 
@@ -8,25 +9,24 @@ namespace TestData
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Demo");
+            Console.WriteLine("*************************************** Start ***************************************");
 
-            SortFeatures.Demo();
-            Console.WriteLine();
-            
-            LinkedListFeatures.Demo();
-            Console.WriteLine();
+            Demoing(SortFeatures.Demo);
+            Demoing(LinkedListFeatures.Demo);
+            Demoing(StackFeatures.Demo);
+            Demoing(QueueFeatures.Demo);
+            Demoing(BinarySearchFeatures.Demo);
 
-
-            StackFeatures.Demo();
-            Console.WriteLine();
-
-            QueueFeatures.Demo();
-            Console.WriteLine();
-
-            Console.WriteLine("*Finish*");
+            Console.WriteLine("*************************************** End ***************************************");
             Console.ReadLine();
-            
         }
 
+        private static void Demoing(Action demo)
+        {
+            demo();
+            Console.WriteLine("Press Enter to continue...");
+            Console.ReadLine();
+            Console.Clear();
+        }
     }
 }

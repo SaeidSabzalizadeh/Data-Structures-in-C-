@@ -6,6 +6,7 @@ namespace DataStructures.Structures
     {
         public static void Demo()
         {
+            Console.WriteLine("LinkedList......");
 
             string[] words = { "the", "actor", "jumped", "over", "the", "director" };
             System.Collections.Generic.LinkedList<string> sentence = new System.Collections.Generic.LinkedList<string>(words);
@@ -47,7 +48,7 @@ namespace DataStructures.Structures
             IndicateNode(current, "Test 8: Add 'quick' and 'skinny' before 'actor':");
 
 
-            Console.ReadLine();
+            Console.WriteLine("End of LinkedList");
         }
 
         private static void Display(System.Collections.Generic.LinkedList<string> words, string test)

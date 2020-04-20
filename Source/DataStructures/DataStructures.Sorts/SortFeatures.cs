@@ -22,8 +22,7 @@ namespace DataStructures.Sorts
             GetSorted(new InsertionSort(), Numbers);
             GetSorted(new SelectionSort(), Numbers);
 
-            Console.WriteLine("End");
-            Console.ReadLine();
+            Console.WriteLine("End of Sorting");
         }
 
         private static void GetSorted(ISort sortEngine, int[] numbers)

@@ -6,6 +6,9 @@ namespace DataStructures.Structures
     {
        public static void Demo()
         {
+
+            Console.WriteLine("Stack......");
+
             System.Collections.Generic.Stack<string> names = new System.Collections.Generic.Stack<string>();
             names.Push("Andrew");
             names.Push("Bobby");
@@ -52,6 +55,8 @@ namespace DataStructures.Structures
             Console.WriteLine("\nstack2.Clear()");
             stack2.Clear();
             Console.WriteLine("\nstack2.Count = {0}", stack2.Count);
+
+            Console.WriteLine("End of Stack");
         }
     }
 }
