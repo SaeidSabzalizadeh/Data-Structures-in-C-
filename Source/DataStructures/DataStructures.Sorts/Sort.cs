@@ -8,7 +8,7 @@ namespace DataStructures.Sorts
         static int[] Numbers = new int[] { 3, 5, 1, 4, 7, 6, 2, 4, 9 };
         static int[] SortedNumbers = new int[] { 1, 2, 3, 4, 4, 5, 6, 7, 9 };
 
-        public static void DemoDifferentSortsFeatures()
+        public static void Demo()
         {
             Console.WriteLine("Sorting......");
             Console.WriteLine();

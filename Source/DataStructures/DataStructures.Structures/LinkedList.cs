@@ -4,7 +4,7 @@ namespace DataStructures.Structures
 {
     public class LinkedList
     {
-        public static void DemoLinkedListFeatures()
+        public static void Demo()
         {
 
             string[] words = { "the", "actor", "jumped", "over", "the", "director" };
