@@ -10,14 +10,14 @@ namespace TestData
         {
             Console.WriteLine("Demo");
 
-            Sort.Demo();
+            SortFeatures.Demo();
             Console.WriteLine();
             
-            LinkedList.Demo();
+            LinkedListFeatures.Demo();
             Console.WriteLine();
 
 
-            Stack.Demo();
+            StackFeatures.Demo();
             Console.WriteLine();
 
             Console.WriteLine("*Finish*");

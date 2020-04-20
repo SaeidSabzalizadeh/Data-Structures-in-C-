@@ -2,7 +2,7 @@
 
 namespace DataStructures.Structures
 {
-    public class LinkedList
+    public class LinkedListFeatures
     {
         public static void Demo()
         {

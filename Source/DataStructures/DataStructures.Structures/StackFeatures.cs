@@ -2,7 +2,7 @@
 
 namespace DataStructures.Structures
 {
-    public class Stack
+    public class StackFeatures
     {
        public static void Demo()
         {
