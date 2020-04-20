@@ -11,12 +11,13 @@ namespace TestData
         {
             Console.WriteLine("*************************************** Start ***************************************");
 
-            Demoing(SortFeatures.Demo);
-            Demoing(LinkedListFeatures.Demo);
-            Demoing(StackFeatures.Demo);
-            Demoing(QueueFeatures.Demo);
-            Demoing(BinarySearchFeatures.Demo);
+            Demoing(JaggedArray.Demo);
             Demoing(LinearSearchFeatures.Demo);
+            Demoing(BinarySearchFeatures.Demo);
+            Demoing(QueueFeatures.Demo);
+            Demoing(StackFeatures.Demo);
+            Demoing(LinkedListFeatures.Demo);
+            Demoing(SortFeatures.Demo);
 
             Console.WriteLine("*************************************** End ***************************************");
             Console.ReadLine();
