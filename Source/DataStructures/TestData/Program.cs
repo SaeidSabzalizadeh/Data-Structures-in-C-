@@ -1,58 +1,25 @@
 ﻿using DataStructures.Sorts;
+using DataStructures.Structures;
 using System;
-using System.Linq;
 
 namespace TestData
 {
     class Program
     {
-
-        static int[] Numbers = new int[] { 3, 5, 1, 4, 7, 6, 2, 4, 9 };
-        static int[] SortedNumbers = new int[] { 1, 2, 3, 4, 4, 5, 6, 7, 9 };
-
         static void Main(string[] args)
         {
-            Console.WriteLine("Sorting......");
+            Console.WriteLine("Demo");
+
+            Sort.DemoDifferentSortsFeatures();
+            Console.WriteLine();
+            
+            LinkedList.DemoLinkedListFeatures();
             Console.WriteLine();
 
-            Console.WriteLine("----------------------------------------------------------------------");
-            Console.WriteLine($"Main Array: {string.Join(", ", Numbers)}");
-            Console.WriteLine("----------------------------------------------------------------------");
-            Console.WriteLine();
-
-            GetSorted(new BubbleSort(), Numbers);
-            GetSorted(new InsertionSort(), Numbers);
-            GetSorted(new SelectionSort(), Numbers);
-
-            Console.WriteLine("End");
+            Console.WriteLine("*Finish*");
             Console.ReadLine();
+            
         }
 
-        private static void GetSorted(ISort sortEngine, int[] numbers)
-        {
-            int[] clonedNumbers = new int[numbers.Length];
-            numbers.ToList().CopyTo(clonedNumbers);
-
-            int[] sortedNumbers = sortEngine.Sort(clonedNumbers);
-
-            Console.WriteLine($"Sorted by {sortEngine.Name}({Validate(sortedNumbers)}): {string.Join(", ", sortedNumbers)}");
-            Console.WriteLine("----------------------------------------------------------------------");
-
-            Console.WriteLine();
-        }
-
-        private static bool Validate(int[] numbers)
-        {
-            if (!numbers.Any() || numbers.Length != SortedNumbers.Length)
-                return false;
-
-            for (int i = 0; i < SortedNumbers.Length; i++)
-            {
-                if (numbers[i] != SortedNumbers[i])
-                    return false;
-            }
-
-            return true;
-        }
     }
 }

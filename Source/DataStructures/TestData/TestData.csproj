@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DataStructures.Sorts\DataStructures.Sorts.csproj" />
+    <ProjectReference Include="..\DataStructures.Structures\DataStructures.Structures.csproj" />
   </ItemGroup>
 
 </Project>
