@@ -20,6 +20,9 @@ namespace TestData
             StackFeatures.Demo();
             Console.WriteLine();
 
+            QueueFeatures.Demo();
+            Console.WriteLine();
+
             Console.WriteLine("*Finish*");
             Console.ReadLine();
             
