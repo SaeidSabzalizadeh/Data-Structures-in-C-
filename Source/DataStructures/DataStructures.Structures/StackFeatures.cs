@@ -24,8 +24,7 @@ namespace DataStructures.Structures
             }
 
             Console.WriteLine("\nPopping '{0}'", names.Pop());
-            Console.WriteLine("Peek at next item to display what will" +
-                              " be destacked: {0}", names.Peek());
+            Console.WriteLine("Peek at next item to display what will" + " be destacked: {0}", names.Peek());
             Console.WriteLine("Now, after peek, popping '{0}'", names.Pop());
 
 
@@ -42,15 +41,13 @@ namespace DataStructures.Structures
 
             System.Collections.Generic.Stack<string> stack3 = new System.Collections.Generic.Stack<string>(array2);
 
-            Console.WriteLine("\nContents of the second copy, with " +
-                                          "duplicates and nulls:");
+            Console.WriteLine("\nContents of the second copy, with " + "duplicates and nulls:");
             foreach (string name in stack3)
             {
                 Console.WriteLine(name);
             }
 
-            Console.WriteLine("\nstack2.Contains(\"Dana\") = {0}",
-                stack2.Contains("Dana"));
+            Console.WriteLine("\nstack2.Contains(\"Dana\") = {0}", stack2.Contains("Dana"));
 
             Console.WriteLine("\nstack2.Clear()");
             stack2.Clear();

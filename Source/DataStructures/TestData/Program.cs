@@ -16,6 +16,7 @@ namespace TestData
             Demoing(StackFeatures.Demo);
             Demoing(QueueFeatures.Demo);
             Demoing(BinarySearchFeatures.Demo);
+            Demoing(LinearSearchFeatures.Demo);
 
             Console.WriteLine("*************************************** End ***************************************");
             Console.ReadLine();

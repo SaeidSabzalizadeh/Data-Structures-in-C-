@@ -40,8 +40,7 @@ namespace DataStructures.Structures
 
             System.Collections.Generic.Queue<string> queueCopy2 = new System.Collections.Generic.Queue<string>(array2);
 
-            Console.WriteLine("\nContents of the second copy, with duplicates and" +
-                      " nulls:");
+            Console.WriteLine("\nContents of the second copy, with duplicates and" + " nulls:");
             foreach (string movie in queueCopy2)
             {
                 Console.WriteLine(movie);
