@@ -1,4 +1,6 @@
-﻿using DataStructures.Sorts;
+﻿using DataStructures.Searches;
+using DataStructures.Sorts;
+using DataStructures.Structures;
 using System;
 
 namespace TestData
@@ -7,25 +9,25 @@ namespace TestData
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Sorting......");
-            Console.WriteLine();
+            Console.WriteLine("*************************************** Start ***************************************");
 
-            ISort sortEngine = new BubbleSort();
+            Demoing(SortFeatures.Demo);
+            Demoing(LinkedListFeatures.Demo);
+            Demoing(StackFeatures.Demo);
+            Demoing(QueueFeatures.Demo);
+            Demoing(BinarySearchFeatures.Demo);
+            Demoing(LinearSearchFeatures.Demo);
 
-            int[] numbers = new int[] { 3, 5, 1, 4, 7, 6, 2 };
-
-            Console.WriteLine($"Main Array: {string.Join(", ", numbers)}");
-            Console.WriteLine();
-
-            int[] sortedNumbers = sortEngine.Sort(numbers);
-
-            Console.WriteLine($"Sorted Array: {string.Join(", ", sortedNumbers)}");
-
-            Console.WriteLine();
-            Console.WriteLine("End");
+            Console.WriteLine("*************************************** End ***************************************");
             Console.ReadLine();
+        }
 
-
+        private static void Demoing(Action demo)
+        {
+            demo();
+            Console.WriteLine("Press Enter to continue...");
+            Console.ReadLine();
+            Console.Clear();
         }
     }
 }
