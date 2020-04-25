@@ -11,6 +11,7 @@ namespace TestData
         {
             Console.WriteLine("*************************************** Start ***************************************");
 
+            Demoing(MinHeapFeatures.Demo);
             Demoing(JaggedArray.Demo);
             Demoing(LinearSearchFeatures.Demo);
             Demoing(BinarySearchFeatures.Demo);
